@@ -9,6 +9,6 @@ cdn url>>
 - (https://cdn.jsdelivr.net/gh/Maskumal/ySrcCode@2/ramadhan/imsak_tangerang_banten.js)
 - (https://cdn.jsdelivr.net/gh/Maskumal/ySrcCode@2/ramadhan/imsak_pemalang_jateng.js)
 
-###Script
+### Script
 $('#imsak').html(time())
 Selamat menggunakan
