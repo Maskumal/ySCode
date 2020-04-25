@@ -2,7 +2,7 @@ Ramadhan = {
   "title": "Jadwal Imsakiyah Ramadhan 1441H / 2020M",
   "author": "Maskumal",
   "email" : "maskumal43@gmail.com",
-  "region": "Indonesia",
+  "region": "Pemalang, Jawa Tengah - Indonesia",
   "time_zone": "Waktu Indonesia Barat",
   "version": "1.0.0",
   "data_source": "Kementrian Agama Repubkik Indonesia", 
