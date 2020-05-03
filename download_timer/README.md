@@ -1,2 +1,2 @@
 ## Download Timer 
--With intereval per second 
+- With intereval per second 
