@@ -13,7 +13,6 @@
   .card{
     border-color: green;
   }
-
   #dl_link{
     display  : none;
     font-size: 27px;
@@ -34,18 +33,15 @@
   <!-- Bootstrap--> 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script> 
   <script>
-   cntdwn = 5; 
-   setTimer = setInterval(function(){
-     if(cntdwn <= 0) {
-       clearInterval(setTimer)
+   setTimer = 5; 
+   dlTimer = setInterval(function(){
+     if(setTmer <= 0) {
+       clearInterval(dlTimer)
        $('.msg').hide()
        $('#dl_link').css('display','block')
        $('.card-body').addClass('bg-success')
-       /*$('.card-body').html("Download Disini")
-       .addClass('bg-success text-light')
-       .css('font-size','30px')  */    
-     } $('#cd').html(cntdwn) 
-     cntdwn -= 1;
+     } $('#cd').html(setTimer) 
+     setTimer -= 1;
    },1000)
    
   </script> 
