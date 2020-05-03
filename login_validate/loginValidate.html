@@ -1,0 +1,88 @@
+<!doctype html><html><head> 
+  <meta charset="UTF-8"> 
+  <meta name="description" content=""> 
+  <meta name="keywords" content="HTML, CSS, JavaScript"> 
+  <meta name="author" content=""> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title> Home </title> 
+  <!--Bootstrap --> 
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+ <style type="text/css" id="dcoder_stylesheet">.form-signin{
+  margin: 35px 35px;
+}
+
+.msg, #reg{
+  display: none;
+}
+
+.liner{
+  //width: 0.5px;
+  height: 10px;
+  background-color: black;
+}
+
+nav a:focus{
+  text-decoration: none;
+}</style></head> 
+ <body class="text-center"> 
+  <nav> 
+   <a href="" class"h3" onclick="logIn(); return false;">Login</a> 
+   <span class="liner">|</span> 
+   <a href="" class"h3" onclick="signUp(); return false;">Sign Up</a> 
+  </nav> 
+  <form class="form-signin" id="login"> 
+   <h1 class="h3 mb-3 font-weight-normal">Login</h1> 
+   <input type="text" id="usrname" class="form-control mb-2" placeholder="Username" required autofocus> 
+   <span class="msg text-danger mb-2 ml-1 float-left"><i>Username not registered</i></span> 
+   <input type="password" id="password" class="form-control" placeholder="Password" required> 
+   <button class="btn btn-lg btn-primary btn-block mt-3" type="submit">Login</button> 
+  </form> 
+  <form class="form-signin" id="signUp"> 
+   <h1 class="h3 mb-3 font-weight-normal">New Register</h1> 
+   <input type="text" id="regUsrname" class="form-control mb-2" placeholder="Username" required autofocus> 
+   <span class="msg text-danger mb-2 ml-1 float-left"><i>Username has been registered</i></span> 
+   <input type="email" id="email" class="form-control mb-2" placeholder="Email Address" required autofocus> 
+   <div class="form-row"> 
+    <div class="col"> 
+     <input type="password" id="password1" class="form-control" placeholder="Password" required> 
+    </div> 
+    <div class="col"> 
+     <input type="password" id="password2" class="form-control" placeholder="Confirm Password" required> 
+    </div> 
+   </div> 
+   <button class="btn btn-lg btn-primary btn-block mt-3" type="submit">Creat Account</button> 
+  </form> 
+  <p class="mt-5 mb-3 text-muted">© 2020</p> 
+  <!-- jQuery --> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script> 
+  <!-- Bootstrap--> 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script> 
+  <script>
+    rstpwd = $('#password')
+    $(".form-signin").submit(function() {
+     user = $('#usrname').val()
+     if( user != "kumal"){
+       $('.msg').css('display', 'block')
+       $('input').removeClass('mb-2')
+       rstpwd.val('');
+       return false;
+     }else{
+         $('body').html("<h1>GOOD JOB</h1>")
+     }
+    })
+    
+    signUp();
+    function signUp(){
+      $("#signUp").css('display','block')
+      $("#login").hide();
+    }
+    
+    logIn();
+    function logIn(){
+      $("#login").css('display','block')
+      $("#signUp").hide();
+    }
+    
+  </script> 
+ 
+</body></html>
